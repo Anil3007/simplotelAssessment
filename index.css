@@ -202,7 +202,9 @@
       #menu-icon {
           display: block;
       }
-
+       .top-left-section {
+      max-width: 270px;
+  }
       ul {
           display: none;
       }
