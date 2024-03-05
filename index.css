@@ -1,0 +1,244 @@
+  body {
+      margin: 0;
+      font-family: "Roboto";
+  }
+
+  nav {
+      background-color: #FF7171;
+      text-align: center;
+      padding: 15px 55px;
+  }
+
+  ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  li {
+      display: inline-block;
+      margin-right: 20px;
+      font-family: "Roboto";
+  }
+
+  a {
+      text-decoration: none;
+      color: #000000;
+      font-weight: 900;
+      font-size: 18px;
+  }
+
+  .menu-bar {
+      width: 20px;
+      height: 20px;
+  }
+
+  #menu-icon {
+      display: none;
+      cursor: pointer;
+      font-size: 24px;
+  }
+
+  .top-section {
+      display: flex;
+  }
+
+  .top-left-section {
+      background-image: linear-gradient(to right, #FFF6AE, #FFD5CE);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: start;
+      padding: 30px;
+      width: 50vw;
+      flex: 1;
+  }
+
+  .top-left-section-heading {
+      font-size: 60px;
+  }
+
+  .top-left-section-para {
+      font-size: 20px;
+  }
+
+  .click-btn {
+      width: 160px;
+      border: none;
+      padding: 15px;
+      background-color: #FF7171;
+      color: #FFFFFF;
+  }
+
+  .top-right-section {
+      flex: 1;
+  }
+
+  .top-section-image {
+      width: 100%;
+      height: 100%;
+  }
+
+  .bottom-section {
+      display: flex;
+      padding: 100px 45px;
+      background-image: linear-gradient(to right bottom, #FFF6AE, #FFD5CE, #FFB2F0);
+      max-height: 610px;
+      align-items: center;
+  }
+
+  .bottom-sections-images {
+      width: 20%;
+      height: 20%;
+  }
+
+  .bottom-left-section {
+      display: flex;
+      flex: 1;
+  }
+
+  .bottom-right-section-heading {
+      font-size: 45px;
+  }
+
+  .bottom-right-section {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      margin: 200px;
+      height: 200px;
+      padding: 35px;
+      justify-content: center;
+      background-color: #FF7171;
+  }
+
+  .bottom-sections-images {
+      width: 300px;
+      height: 300px;
+      margin-bottom: 10px;
+  }
+
+  .images-container {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+  }
+
+  .image {
+      width: 450px;
+      height: 610px;
+      margin-left: 25px;
+  }
+
+  .arrow {
+      width: 20px;
+      height: 20px;
+      margin-left: 20px;
+  }
+
+  .click-arrow-container {
+      display: flex;
+      align-items: center;
+  }
+
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+      nav {
+          padding: 15px 30px;
+      }
+
+      ul {
+          align-items: center;
+      }
+
+      li {
+          margin-right: 0;
+          margin-bottom: 10px;
+      }
+
+      .top-section {
+          flex-direction: column;
+      }
+
+      .top-left-section {
+          width: 100%;
+          padding: 20px;
+      }
+
+      .top-right-section {
+          order: -1;
+      }
+
+      .bottom-right-section {
+          margin: 20px;
+          height: 80px;
+      }
+
+      .bottom-section {
+          flex-direction: column;
+          padding: 50px;
+      }
+
+      .top-section-image {
+          width: 100%;
+          height: 100%;
+      }
+
+      .bottom-sections-images {
+          width: 300px;
+          height: 300px;
+          margin-bottom: 10px;
+      }
+
+      .image {
+          width: 300px;
+          height: 610px;
+      }
+  }
+
+  @media (max-width: 576px) {
+      #menu-icon {
+          display: block;
+      }
+
+      ul {
+          display: none;
+      }
+
+      ul.show {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+
+      ul.show li {
+          margin-bottom: 10px;
+      }
+
+      .bottom-right-section {
+          margin: 20px;
+          height: 80px;
+      }
+
+      .bottom-section {
+          flex-direction: column;
+      }
+
+      .top-section-image {
+          width: 100%;
+          height: 100%;
+      }
+
+      .bottom-sections-images {
+          width: 100px;
+          height: 100px;
+          margin-bottom: 10px;
+      }
+
+      .image {
+          width: 120px;
+          height: 210px;
+      }
+  }
